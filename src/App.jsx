@@ -8,10 +8,13 @@ import Feature from './components/feature';
 import Cards from './components/cards';
 import Footer from './components/footer';
 import LocomotiveScroll from 'locomotive-scroll';
+import { Helmet } from 'react-helmet';        {/* Helmet is required for manipulating the meta tags in react */}
+
 
 function App() {
 
 const locomotiveScroll = new LocomotiveScroll();
+
 
   return (
     <div className='w-full min-h-screen bg-[#F3F3F3] text-black '>
@@ -23,9 +26,14 @@ const locomotiveScroll = new LocomotiveScroll();
       <Feature></Feature>
       <Cards></Cards>
       <Footer></Footer>
+      {/* Helmet is required for manipulating the meta tags in react */}
+      <Helmet>
+      <title>React Animated-Neev</title>
+      </Helmet>
     </div>
 
   )
 }
+
 
 export default App

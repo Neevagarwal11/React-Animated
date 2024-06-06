@@ -28,7 +28,9 @@ const locomotiveScroll = new LocomotiveScroll();
       <Footer></Footer>
       {/* Helmet is required for manipulating the meta tags in react */}
       <Helmet>
+      <meta charSet="utf-8" />
       <title>React Animated-Neev</title>
+      <link rel="icon" href="https://ochi.design/wp-content/uploads/2022/04/logo003.png" />
       </Helmet>
     </div>
 
